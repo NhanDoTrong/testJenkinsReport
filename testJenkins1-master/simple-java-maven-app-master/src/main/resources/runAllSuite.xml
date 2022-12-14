@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="cores.common.MethodListener"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+    <test name="Run on Chrome Browser">
+        <classes>
+            <class name="testcases.techpanda.account.Level_15_reportNG_Teacher_Part_I"/>
+        </classes>
+    </test>
+</suite>

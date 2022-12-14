@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="libReportNG">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/testJenkins1-master/simple-java-maven-app-master/libReportNG" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/testJenkins1-master/simple-java-maven-app-master/libReportNG" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/testJenkins1-master/simple-java-maven-app-master/libReportNG" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/testJenkins1-master/simple-java-maven-app-master/libReportNG" recursive="false" type="SOURCES" />
+  </library>
+</component>
