@@ -12,46 +12,49 @@
 <body>
 <h1>Run on Chrome Browser</h1>
 <p>
-  Test duration: 60.194s
+  Test duration: 8.373s
 </p>
 
-
-
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I</td>
+  <table class="resultsTable configTable">
+    <tr><th colspan="3" class="header failedConfig">Failed Configuration</th></tr>
+              <tr class="group">
+        <td colspan="3">testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I</td>
       </tr>
             
 <tr>
   <td class="method">
-                  TC_06_LoginWithValidEmailAndPassword
+                  beforeClass
       </td>
   <td class="duration">
-    31.365s
+    8.373s
   </td>
   <td class="result">
         
+          <i>Method arguments: </i><span class="arguments">"chrome", "http://live.techpanda.org/"</span><br />
     
         
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h3[text()=&apos;Contact Information&apos;]/parent::div/following-sibling::div[@class=&apos;box-content&apos;]/p[contains(.,&apos;Automation FC&apos;)] (tried for 30 second(s) with 500 milliseconds interval)</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:34879<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;<br/>
+System info: host: &apos;NB23828&apos;, ip: &apos;10.10.90.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;<br/>
+Driver info: driver.version: RemoteWebDriver</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)<br />
-              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)<br />
-              cores.common.BasePage_Executor.waitForElementVisible(BasePage_Executor.java:248)<br />
-              actions.pageObject.User.MyDashBoardPageObject.getContactInformationByUserName(MyDashBoardPageObject.java:18)<br />
-              testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.TC_06_LoginWithValidEmailAndPassword(Level_15_Log4J_Teacher_Part_I.java:88)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br />
+              cores.common.BaseTest.getBrowserDriver(BaseTest.java:42)<br />
+              testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.beforeClass(Level_15_Log4J_Teacher_Part_I.java:25)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
               java.lang.reflect.Method.invoke(Method.java:498)<br />
               org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+              org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+              org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+              org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
               org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
               org.testng.TestRunner.run(TestRunner.java:505)<br />
               org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
@@ -66,46 +69,106 @@
               org.testng.TestNG.run(TestNG.java:1017)<br />
               com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
               com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
-                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h3[text()=&apos;Contact Information&apos;]/parent::div/following-sibling::div[@class=&apos;box-content&apos;]/p[contains(.,&apos;Automation FC&apos;)]&quot;}<br/>
-&nbsp; (Session info: chrome=108.0.5359.99)<br/>
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html<br/>
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;<br/>
-System info: host: &apos;NB23828&apos;, ip: &apos;10.10.90.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;<br/>
-Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\dotn\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55081}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}<br/>
-Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
-*** Element info: {Using=xpath, value=//h3[text()=&apos;Contact Information&apos;]/parent::div/following-sibling::div[@class=&apos;box-content&apos;]/p[contains(.,&apos;Automation FC&apos;)]}</a><br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:34879</a><br />
         <div class="stackTrace" id="exception-1">
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
-                      sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)<br />
-                      sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
-                      java.lang.reflect.Constructor.newInstance(Constructor.java:423)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
-                      org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
-                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
                       org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
                       org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
-                      org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
-                      org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)<br />
-                      org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)<br />
-                      org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)<br />
-                      cores.common.BasePage_Executor.waitForElementVisible(BasePage_Executor.java:248)<br />
-                      actions.pageObject.User.MyDashBoardPageObject.getContactInformationByUserName(MyDashBoardPageObject.java:18)<br />
-                      testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.TC_06_LoginWithValidEmailAndPassword(Level_15_Log4J_Teacher_Part_I.java:88)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br />
+                      cores.common.BaseTest.getBrowserDriver(BaseTest.java:42)<br />
+                      testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.beforeClass(Level_15_Log4J_Teacher_Part_I.java:25)<br />
                       sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
                       sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
                       sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
                       java.lang.reflect.Method.invoke(Method.java:498)<br />
                       org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-                      org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-                      org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-                      org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-                      org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
+                      org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+                      org.testng.TestRunner.run(TestRunner.java:505)<br />
+                      org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+                      org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+                      org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+                      org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+                      org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+                      org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+                      org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+                      org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+                      org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+                      org.testng.TestNG.run(TestNG.java:1017)<br />
+                      com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+                      com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                  </div>
+              <b>Caused by: </b> <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse">java.net.ConnectException: Connection refused: connect</a><br />
+        <div class="stackTrace" id="exception-2">
+                      java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)<br />
+                      java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:81)<br />
+                      java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476)<br />
+                      java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218)<br />
+                      java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200)<br />
+                      java.net.PlainSocketImpl.connect(PlainSocketImpl.java:162)<br />
+                      java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394)<br />
+                      java.net.Socket.connect(Socket.java:606)<br />
+                      okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)<br />
+                      okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)<br />
+                      okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)<br />
+                      okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)<br />
+                      okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)<br />
+                      okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)<br />
+                      okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)<br />
+                      okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)<br />
+                      okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)<br />
+                      okhttp3.RealCall.execute(RealCall.java:77)<br />
+                      org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)<br />
+                      org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)<br />
+                      org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+                      org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)<br />
+                      cores.common.BaseTest.getBrowserDriver(BaseTest.java:42)<br />
+                      testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.beforeClass(Level_15_Log4J_Teacher_Part_I.java:25)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+                      sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+                      sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+                      java.lang.reflect.Method.invoke(Method.java:498)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+                      org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)<br />
+                      org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)<br />
+                      org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)<br />
+                      org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)<br />
+                      org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)<br />
                       org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
                       org.testng.TestRunner.run(TestRunner.java:505)<br />
                       org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
@@ -124,11 +187,33 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
           </div>
       </td>
 </tr>
-      </table>
+    
+          <tr><td colspan="3">&nbsp;</td></tr>
+      <tr><td colspan="3" class="header skippedConfig">Skipped Configuration</td></tr>
+                    <tr>
+          <td colspan="3" class="group">testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I</td>
+        </tr>
+                
+<tr>
+  <td class="method">
+                  afterClass
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
+    
+        
+
+      </td>
+</tr>
+            </table>
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
           <tr>
         <td colspan="3" class="group">testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I</td>
       </tr>
@@ -138,10 +223,10 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
                   TC_01_LoginWithEmptyEmailAndPassword
       </td>
   <td class="duration">
-    3.744s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -152,10 +237,10 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
                   TC_02_LoginWithInvalidEmail
       </td>
   <td class="duration">
-    0.976s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -166,10 +251,10 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
                   <span class="description" title="Email not exist in application">TC_03_LoginWithIncorrectEmail</span>
       </td>
   <td class="duration">
-    3.037s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -180,10 +265,10 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
                   <span class="description" title="Password less than 6 characters">TC_04_LoginWithInvalidPassword</span>
       </td>
   <td class="duration">
-    1.089s
+    0.000s
   </td>
   <td class="result">
-        
+                               
     
         
 
@@ -194,16 +279,31 @@ Session ID: e2968340dacf8a1f457c71fee53595a8<br/>
                   TC_05_LoginWithIncorrectPassword
       </td>
   <td class="duration">
-    0.352s
+    0.000s
   </td>
   <td class="result">
+                               
+    
         
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_06_LoginWithValidEmailAndPassword
+      </td>
+  <td class="duration">
+    0.000s
+  </td>
+  <td class="result">
+                               
     
         
 
       </td>
 </tr>
       </table>
+
   
 </body>
 </html>

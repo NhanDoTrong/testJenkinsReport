@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Run on FireFox Browser"
+<testsuite name="Run on Edge Browser"
            tests="8"
            failures="1"
            errors="0"
            skipped="7"
-           time="25.921">
+           time="2.398">
   <properties />
-            <testcase name="beforeClass" time="25.921" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
-                <failure type="java.lang.NullPointerException"
-                  message="(null)"
+            <testcase name="beforeClass" time="2.398" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
+                <failure type="org.openqa.selenium.NoSuchWindowException"
+                  message="no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=108.0.1462.46)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;NB23828&apos;, ip: &apos;10.10.90.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55655}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\dotn\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f335bbad337fa0ea3137e7baa3afb03c"
               >
-<![CDATA[java.lang.NullPointerException
-  cores.common.BaseTest.getBrowserDriver(BaseTest.java:40)
-  testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.beforeClass(Level_15_Log4J_Teacher_Part_I.java:25)
+<![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=108.0.1462.46)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NB23828', ip: '10.10.90.207', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 108.0.1462.46, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:55655}, msedge: {msedgedriverVersion: 108.0.1462.46 (d29728ee6817..., userDataDir: C:\Users\dotn\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f335bbad337fa0ea3137e7baa3afb03c
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+  org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+  org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+  org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+  org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+  testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I.beforeClass(Level_15_Log4J_Teacher_Part_I.java:26)
   sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,22 +70,22 @@
             <testcase name="afterClass" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
           <skipped />
     </testcase>
-            <testcase name="TC_01_LoginWithEmptyEmailAndPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
-          <skipped />
-    </testcase>
             <testcase name="TC_06_LoginWithValidEmailAndPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
-          <skipped />
-    </testcase>
-            <testcase name="TC_04_LoginWithInvalidPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
           <skipped />
     </testcase>
             <testcase name="TC_05_LoginWithIncorrectPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
           <skipped />
     </testcase>
-            <testcase name="TC_02_LoginWithInvalidEmail" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
+            <testcase name="TC_01_LoginWithEmptyEmailAndPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
           <skipped />
     </testcase>
             <testcase name="TC_03_LoginWithIncorrectEmail" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
+          <skipped />
+    </testcase>
+            <testcase name="TC_02_LoginWithInvalidEmail" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
+          <skipped />
+    </testcase>
+            <testcase name="TC_04_LoginWithInvalidPassword" time="0.0" classname="testcases.techpanda.account.Level_15_Log4J_Teacher_Part_I">
           <skipped />
     </testcase>
   
